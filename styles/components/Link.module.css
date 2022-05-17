@@ -1,0 +1,39 @@
+.link
+{
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: aquamarine;
+    text-underline-offset: 3px;
+    transition-property: text-decoration, font-weight;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.link:hover
+{
+    font-weight: 800;
+    text-decoration-color: darkgreen;
+}
+
+.blink
+{
+    display:inline-block;
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: aquamarine;
+    text-underline-offset: 4px;
+    transition-property: text-decoration, font-size, transform;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.blink:hover
+{
+    font-size: 36px;
+    text-decoration-color: darkgreen;
+    transform: translate(5px, -10px);
+}
