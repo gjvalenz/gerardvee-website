@@ -1,15 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import ProjectCard from '../components/ProjectCard'
 import WebsiteBase from '../components/WebsiteBase'
 import styles from '../styles/Home.module.css'
-
-function constructProject(id, name, description, url, github_url, skills)
-{
-  return {id, url, description, name, github_url, skills}
-}
-
-
 
 /*export default function Home({projects}) {
   return (
@@ -79,26 +71,11 @@ function constructProject(id, name, description, url, github_url, skills)
   )
 }*/
 
-export default function Home({projects}) {
+export default function Home() {
   return (
     <WebsiteBase>
-      <div className={styles.main}>{projects.map(project => (<ProjectCard {...project} key={project.id}/>))}</div>
+      <Head><title>Home</title></Head>
+      
     </WebsiteBase>
   );
 }
-
-//export async function getServerSideProps() { use static props rather than serversideprops
-export async function getStaticProps(){ 
-  // Fetch data from external API
-  //const res = await fetch(`https://api.github.com/users/gerardvee`)
-  //const data = await res.json()
-  const projects = [
-    constructProject(0, 'Delano Farms', 'A Delano farms website',  'https://www.delanofarms.com/', 'github.com/GerardVee/delano_farms', ['react', 'php', 'nodejs', 'javascript']),
-    constructProject(1, 'Gighub', 'Github + LinkedIn',  'https://www.gighub.com/', 'github.com/tfwatson/csci201-final-project', ['java', 'java servlets', 'mysql', 'github']),
-    constructProject(2, 'Game', 'A game built in js',  'https://www.games.com/', 'github.com/GerardVee/game', ['javascript', 'canvas', 'html', 'css']),
-  ];
-
-  // Pass data to the page via props
-  return { props: { projects } }
-}
-

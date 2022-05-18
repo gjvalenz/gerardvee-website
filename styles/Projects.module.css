@@ -1,0 +1,7 @@
+.main
+{
+  min-height: 80vh;
+  padding: 4rem 0;
+  grid-column: 1 / 4;
+  background-color: #e7e7e7;
+}

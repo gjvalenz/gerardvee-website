@@ -2,7 +2,7 @@
   padding: 0 2rem;
 }
 
-.main {
+/*.main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 .footer {
   display: flex;
@@ -67,6 +67,8 @@
 
 .main
 {
+  min-height: 80vh;
+  padding: 4rem 0;
   grid-column: 1 / 4;
   background-color: #e7e7e7;
 }

@@ -12,12 +12,11 @@ export default class WebsiteBase extends React.Component
             <Link url='/'>home</Link>
             <Link url='/projects'>projects</Link>
             <Link url='https://github.com/GerardVee'>github</Link>
-            <Link url='/contact'>contact</Link>
+            <Link url='https://www.linkedin.com/in/gerardo-valenzuela-336496116/'>contact me</Link>
         </div>
+        <div className={styles.main}>
         {this.props.children}
-        {/*this.props.children.map((slide, index) => {
-            return React.cloneElement(slide, { key: index, className: 'project-main' })
-        })*/}
+        </div>
         <div className={styles.footer}>
             <h3 className={styles.intro}>Hi, my name is <Link url='https://www.linkedin.com/in/gerardo-valenzuela-336496116/'>Gerardo</Link>. I am a CS student at USC who has an interest in Full-Stack development, AI, and Robotics.</h3>
         </div>
