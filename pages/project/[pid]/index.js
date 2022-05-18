@@ -11,9 +11,11 @@ const Post = ({project}) => {
           <div className={styles.container}>
             <h1 className={styles.title}>{name}</h1>
             <img src={image_url} height={480} width={840} />
-            <Link url={github_url}>github</Link>
-            <p>{story}</p>
-            <Link url={url} small>demo</Link>
+            <p className={styles.story}>{story}</p>
+            <div className={styles.sideBySide}>
+              <Link url={github_url}>github</Link>
+              <Link url={url}>demo</Link>
+            </div>
           </div>
       </WebsiteBase>
     );

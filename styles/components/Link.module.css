@@ -1,6 +1,6 @@
 .link
 {
-    font-size: 22px;
+    font-size: 1.8em;
     font-weight: 500;
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -22,7 +22,7 @@
 
 .smlink
 {
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: 600;
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -45,7 +45,7 @@
 .blink
 {
     display:inline-block;
-    font-size: 32px;
+    font-size: 3em;
     font-weight: 500;
     text-decoration: underline;
     text-decoration-thickness: 5px;
@@ -61,7 +61,7 @@
 
 .blink:hover
 {
-    font-size: 36px;
+    font-size: 3.2em;
     text-decoration-color: darkgreen;
     transform: translate(5px, -10px);
 }

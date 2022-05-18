@@ -74,8 +74,41 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <WebsiteBase>
-      <Head><title>Home</title></Head>
-      
+      <>
+        <Head><title>Home</title></Head>
+        <div className={styles.container}>
+          <h1 className={styles.header}>about me</h1>
+          <div className={styles.subcontainer}>
+            <div className={styles.par}>
+              <p>Hey there, my name is Gerardo Valenzuela, and I am a Junior at USC studying Computer Science! So far, I have taken CSCI 104, 170, 201, 270, 360, and 356.</p>
+              <p>I am experienced with C++, C, Assembly, Java, Python, CSS, Javascript, etc. As far as web development technologies, I have a preference for React, Node.js, and MongoDB, but I have also used Angular, PHP, Jquery, Java Servlets, Ruby on Rails, and some Djano and Flask.</p>
+              <p>I hope to either become a full-stack, front-end, or back-end developer. But I would also be happy to become a software developer and maybe work with more lower-level problems.</p>
+              <p>If you have any questions or you'd just like to chat, please don't hesitate to hit me up :3</p>
+            </div>
+            <img className={styles.img} src={'https://res.cloudinary.com/practicaldev/image/fetch/s--4nVcu5jx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://cdn.dribbble.com/users/722835/screenshots/4082720/bot_icon.gif'} />
+          </div>
+          <h1 className={styles.header}>where to find me</h1>
+          <div className={styles.subcontainer}>
+            <div className={styles.par}>
+              <p>You can usually find me in SAL at USC working on homework or perhaps an extra-curricular project.</p>
+              <p>If you don't think I'm at SAL, make sure I'm not in the back scribbling on the whiteboards about a recent problem I'm interested in.</p>
+              <p>Besides that, I could either be in class or sitting-in on a class I am interested in.</p>
+            </div>
+            <img className={styles.img} src={'https://viterbivoices.usc.edu/wp-content/uploads/2017/01/sal.jpg'} />
+          </div>
+          <h1 className={styles.header}>fun facts about me</h1>
+          <div className={styles.subcontainer}>
+            <div className={styles.par}>
+              <p>I grew up playing Pokemon, so I have created a few minigames inspired by it. Of course, due to copyright reasons, I don't upload these online.</p>
+              <p>I one day hope to work at either Blizzard for Overwatch 2 or Kingsisle for Wizard101 for a short while.</p>
+              <p>I fell in love with computers at the age of 5 and began programming at the age of 14.</p>
+              <p>I am fluent in Spanish and English, and I have been learning Swedish and Japanese for a while. I hope to one day become fluent in them as well as Chinese.</p>
+              <p>I am currently working on a game that borrows elements from Wizard101, Overwatch, and Pokemon: my favorite games.</p>
+            </div>
+            <img className={styles.img} src={'https://cdn.cloudflare.steamstatic.com/steam/apps/799960/ss_637c9b1751cf14254d7d181cc08681c694225361.1920x1080.jpg?t=1618937889'} />
+          </div>
+        </div>
+      </>
     </WebsiteBase>
   );
 }
