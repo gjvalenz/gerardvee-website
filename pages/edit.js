@@ -43,7 +43,7 @@ export async function getServerSideProps(context){
         {
             if(cookie.token == 'DRRJDUOH4FURUF4HRDI3NDE2I3E')
             {
-                const res = await fetch('gerardvee.com/api/projects')
+                const res = await fetch('https://www.gerardvee.com/api/projects')
                 const _projects = await res.json()
 
                 return { props: { _projects } }
