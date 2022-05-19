@@ -25,7 +25,7 @@ const Post = ({project}) => {
 
   export async function getServerSideProps(context){
     const { pid } = context.query;
-    const res = await fetch(`http://localhost:3000/api/project/${pid}`)
+    const res = await fetch(`gerardvee.com/api/project/${pid}`)
     const project = await res.json()
   
     return { props: { project } }

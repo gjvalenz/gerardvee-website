@@ -12,8 +12,8 @@ export default function Projects({projects}) {
 }
 
 //export async function getServerSideProps() { use static props rather than serversideprops
-export async function getStaticProps(){ 
-  const res = await fetch('http://localhost:3000/api/projects')
+export async function getServerSideProps(){ 
+  const res = await fetch('gerardvee.com/api/projects')
   const projects = await res.json()
 
   return { props: { projects } }

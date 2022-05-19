@@ -28,7 +28,7 @@ const Edit = ({_projects}) => {
       <WebsiteBase>
           <Head><title>Edit</title></Head>
           {projects.map(project => (<EditProjectCard {...project} key={project.id} onDeletion={onDeletedProject}/>))}
-          {newProjects.map(project => (<EditProjectCard {...project} isNew onSuccess={onNewProject}/>))}
+          {newProjects.map((project, _ix) => (<EditProjectCard {...project} isNew onSuccess={onNewProject} key={_ix}/>))}
           <button onClick={newProject}>Create new project</button>
       </WebsiteBase>
     );
@@ -43,7 +43,7 @@ export async function getServerSideProps(context){
         {
             if(cookie.token == 'DRRJDUOH4FURUF4HRDI3NDE2I3E')
             {
-                const res = await fetch('http://localhost:3000/api/projects')
+                const res = await fetch('gerardvee.com/api/projects')
                 const _projects = await res.json()
 
                 return { props: { _projects } }
