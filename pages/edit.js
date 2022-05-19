@@ -52,7 +52,7 @@ export async function getServerSideProps(context){
             {
                 return {
                     redirect: {
-                        permanent: 'false',
+                        permanent: false,
                         destination: '/login'
                     },
                     props: {}
@@ -63,7 +63,7 @@ export async function getServerSideProps(context){
         {
             return {
                 redirect: {
-                    permanent: 'false',
+                    permanent: false,
                     destination: '/login'
                 },
                 props: {}
@@ -72,7 +72,7 @@ export async function getServerSideProps(context){
     }
     return {
         redirect: {
-            permanent: 'false',
+            permanent: false,
             destination: '/login'
         },
         props: {}
