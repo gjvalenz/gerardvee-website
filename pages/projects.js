@@ -8,13 +8,13 @@ export default function Projects({projects}) {
   return (
     <WebsiteBase>
       <Head><title>Projects</title></Head>
-      {projects.map(project => (<ProjectCard {...project} key={project.id}/>))}
+      {projects && projects.map(project => (<ProjectCard {...project} key={project.id}/>))}
     </WebsiteBase>
   );
 }
 
 //export async function getServerSideProps() { use static props rather than serversideprops
-export async function getStaticProps(){ 
+export async function getInitialProps(){ 
   //const res = await fetch('https://www.gerardvee.com/api/projects')
   //const snapshot = await onValue(ref);
   //const data = await getData(ref);
