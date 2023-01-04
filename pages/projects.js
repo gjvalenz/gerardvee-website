@@ -4,7 +4,7 @@ import WebsiteBase from '../components/WebsiteBase'
 import { getDocs, collection } from 'firebase/firestore'
 import db from '../projects_db_instance'
 
-export default function Projects({projects}) {
+function Projects({projects}) {
   return (
     <WebsiteBase>
       <Head><title>Projects</title></Head>
@@ -14,16 +14,25 @@ export default function Projects({projects}) {
 }
 
 //export async function getServerSideProps() { use static props rather than serversideprops
-export async function getInitialProps(){ 
+Projects.getInitialProps = async (ctx) => { 
   //const res = await fetch('https://www.gerardvee.com/api/projects')
   //const snapshot = await onValue(ref);
   //const data = await getData(ref);
-  const qs = await getDocs(collection(db, 'projects'));
+  const res = await fetch('https://firestore.googleapis.com/v1/projects/website-373507/databases/(default)/documents/projects');
+  const projects = await res.json();
+  console.log(projects);
   let dats = [];
-  qs.forEach((doc) => {
+  for(let key in projects)
+  {
+    if(projects.hasOwnProperty(key))
+    {
+      dats.push(projects[key]);
+    }
+  }
+  /*qs.forEach((doc) => {
       console.log(`${doc.id} => ${doc.data()}`);
       dats.push(doc.data());
-  })
+  })*/
   //ref.once('value', (data) => {
   //  console.log(data);
   //});
@@ -33,6 +42,8 @@ export async function getInitialProps(){
   //console.log(val)
   //const projects = await res.json()
 
-  return { props: { projects: dats } }
+  return { projects: dats }
 }
+
+export default Projects
 

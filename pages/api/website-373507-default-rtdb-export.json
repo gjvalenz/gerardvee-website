@@ -1,0 +1,34 @@
+{
+  "projects": {
+    "p1": {
+      "_id": "1",
+      "github_url": "https://github.com/GerardVee/delano_farms",
+      "image_url": "https://i.ibb.co/927yYHM/chrome-PXKC3rs-Wb1.jpg",
+      "name": "Delano Farms",
+      "short_description": "A Delano Farms mockup website I created with basic HTML, javascript, and CSS.",
+      "skills": "html css javascript",
+      "story": "A Delano farms website",
+      "url": "https://www.delanofarms.com/"
+    },
+    "p2": {
+      "_id": "2",
+      "github_url": "https://github.com/tfwatson/csci201-final-project",
+      "image_url": "https://i.ibb.co/52mT0Ct/Acro-Rd32-zy-N3aa-Ic75.png",
+      "name": "GigHub",
+      "short_description": "A project I worked with my classmates for my CSCI 201 final project at USC.",
+      "skills": "java authentication",
+      "story": "GitHub + LinkedIn",
+      "url": "https://www.gighub.com/"
+    },
+    "p3": {
+      "_id": "3",
+      "github_url": "",
+      "image_url": "",
+      "name": "AI ML Project",
+      "short_description": "For CSCI 360, we were tasked to do some cool things.",
+      "skills": "python machine-learning",
+      "story": "",
+      "url": ""
+    }
+  }
+}
