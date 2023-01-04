@@ -33,11 +33,13 @@
     font-size: 1.3em;
     margin-block-end: 0.5em;
     margin-top: 0em;
+    text-align: center;
 }
 
 .skills
 {
     font-size: 1.1em;
     margin-block-start: 0.5em;
+    text-align: center;
     color:dimgrey;
 }
