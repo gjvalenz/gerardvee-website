@@ -26,7 +26,7 @@ const Post = ({project}) => {
   
 export default Post
 
-export async function getServerSideProps(context){
+export async function getStaticProps(context){
   const { pid } = context.query;
     //const res = await fetch(`https://www.gerardvee.com/api/project/${pid}`)
     //const project = await res.json()
