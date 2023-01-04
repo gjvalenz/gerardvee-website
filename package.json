@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8000",
     "build": "next build",
     "start": "next start -p 8080",
     "lint": "next lint",
+    "export": "next export",
     "server-start": "yarn run build && pm2 restart yarn --name \"gerardvee.com\" -- start"
   },
   "dependencies": {
     "cookie": "^0.5.0",
+    "firebase": "^9.15.0",
     "js-cookie": "^3.0.1",
     "mongodb": "^4.6.0",
     "next": "12.1.6",
