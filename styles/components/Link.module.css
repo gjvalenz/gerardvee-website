@@ -20,6 +20,22 @@
     text-decoration-color: darkgreen;
 }
 
+.xsmall
+{
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: aquamarine;
+    text-underline-offset: 2px;
+    transition-property: text-decoration, font-weight;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
 .smlink
 {
     font-size: 1.2em;
@@ -36,7 +52,7 @@
     margin-top: 0.5em;
 }
 
-.smlink:hover
+.smlink:hover, .xsmall:hover
 {
     font-weight: 800;
     text-decoration-color: darkgreen;
