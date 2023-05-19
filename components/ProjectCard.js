@@ -21,7 +21,7 @@ function ReadMore({clicked, callback, short_description, skills, github_url, url
         { url && <Link small url={url}>demo</Link> }
       </div>}
       {!github_url && <><div className={stylesIndex.sideBySide}>
-        <p>Please contact me for further details about the code. I'll be happy to talk about it!</p>
+        <p>Please contact me for further details about the code. I&apos;ll be happy to talk about it!</p>
       </div>
       <div className={stylesIndex.sideBySide}>
       { url && <Link small url={url}>demo</Link> }
